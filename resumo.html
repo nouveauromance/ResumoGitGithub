@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo</title>
+</head>
+<body>
+    <!-- título e descrição geral -->
+    <h1>Resumo - Git & Github</h1>
+    <p>Como aplicar no dia à dia, ideias e conceitos gerais</p>
+    
+    <!-- container 1: introdução -->
+    <div>
+        <h2>Ideia geral:</h2>
+        <!-- conceito de git -->
+        <p>
+            O Git é um sistema de controle de versões de arquivos<b>
+            responsável por armazenar um histórico<br>de alterações e
+            versões de determinado projeto.</b>
+        </p>
+        <!-- conceito de github -->
+        <p>
+            O Github é uma plataforma que atua como rede social para profissionais
+            da área de TI, programadores<br>e pessoas com ramo. Serve para o <b>compartilhamento 
+            de projetos, repositórios e materiais.</b>
+        </p>
+        <!-- redirecionamento para especificações -->
+        <p>
+            Vejamos, a seguir, os principais conceitos e comandos do Git:
+        </p>
+    </div>
+
+    <!-- container 2: principais conceitos -->
+    <div>
+        <h3>Como o sistema funciona?</h3>
+        <!-- apresentação de ideia geral (sistema, como funciona, etc) -->
+        <p>
+            O sistema armazena os arquivos em <b>repositórios</b>, que funcionam como pastas que ficam 
+            anexadas ao seu perfil.<br> Nelas, você realiza os chamados <b>commits</b>, que funcionam, 
+            basicamente, como checkpoints (salvamentos) no seu código.<br>São registros que incluem as mudanças
+            nos arquivos e exibem uma mensagem explicando o que foi modificado.
+        </p>
+
+        <!-- definição de conceitos -->
+        <!-- repositório -->
+        <h2>Repositórios e Trees</h2>
+        <p>
+            <ul>
+                <li>Um repositório é como uma <b>pasta ou diretório</b> que contém todos os arquivos e o histórico de um projeto.<br>
+                Cada commit é uma <b>entrada no histórico do repositório</b> que contém informações sobre as alterações feitas.<br></li>
+                <li>Árvores (trees) representam a <b>estrutura do diretório e arquivos em um commit específico</b>, que tem como função <b>registrar<br>
+                a organização do projeto</b> ao longo do histórico de desenvolvimento.</li>
+            </ul>
+        </p>
+        <!-- commit -->
+        <h2>Commit e o ato de Comitar</h2>
+        <p>
+            <b>1. Preparação:</b><br>
+            Antes de comitar, você usa "git add" para adicionar as alterações que deseja incluir no commit.<br>
+            <b>2. Comitando:</b><br>
+            Depois, o comando "git commit" captura um snapshot dessas alterações, salvando-as no histórico do projeto.<br>
+            <b>3. Mensagem:</b><br>
+            Junto com as mudanças, você inclui uma mensagem descritiva (com -m "sua mensagem") para explicar o que foi alterado. 
+        </p>
+        <h3>Vantagens de comitar</h3>
+        <p>
+            <ul>
+                <li><b>Rastreamento:</b><br> Permite ver o histórico de alterações, quem fez e quando.<br></li>
+                <li><b>Backups:</b><br> Facilita o retorno a versões anteriores do código.<br></li>
+                <li><b>Colaboração:</b><br> Ideal para trabalhar em equipe, pois cada commit mostra as contribuições individuais.<br></li> 
+                <li><b>Organização:</b><br> Ajuda a manter o código organizado e com um histórico claro.</li>
+            </ul>
+        </p>
+        <!-- branches & merges-->
+        <h2>Branches & Merges</h2>
+        <p>
+            <ul>
+                <li>As “ramificações”, ou <b>branches</b>, permitem que você crie linhas separadas para trabalhar em alterações<br>
+                    sem afetar a linha principal do projeto.</li>
+                <li>Cada branch é uma <b>ramificação independente do código-fonte</b>, possibilitando que você isole e desenvolva novas<br>
+                    funcionalidades, refatore o código ou faça correções sem interferir no código existente na<br>
+                    branch principal, que geralmente é nomeada como "main".</li>
+                <li>Em um projeto com branches diferentes, a fusão, ou <b>merge</b>, permite combinar as alterações de volta à<br>
+                    linha principal, quando as alterações estão prontas.</li>
+            </ul>
+        </p>
+        <!-- repositórios remotos-->
+        <h2>Repositórios Remotos</h2>
+        <p>
+            Um repositório remoto é uma <b>versão de um repositório que está hospedada em um servidor remoto</b>,<br> 
+            como o GitHub, GitLab, ou outro serviço similar, ou mesmo em um servidor interno da sua organização. Ele serve como um<br>
+            local centralizado para armazenar e compartilhar o código-fonte de um projeto, permitindo que vários desenvolvedores<br>
+            colaborem e sincronizem suas alterações. 
+        </p>
+        <h3>O que um repositório remoto faz?</h3>
+        <p>
+            <ul>
+                <li><b>Armazenamento centralizado:</b><br>
+                Fornece um local seguro e centralizado para armazenar o código-fonte do projeto.</li>
+                <li><b>Colaboração:</b><br>
+                Permite que múltiplos desenvolvedores trabalhem no mesmo projeto, sincronizando suas alterações e evitando conflitos.</li>
+                <li><b>Controle de versão:</b><br>
+                Mantém um histórico completo de todas as alterações feitas no código, permitindo que os desenvolvedores voltem a versões 
+                anteriores, se necessário.</li>
+                <li><b>Compartilhamento:</b><br>
+                Facilita o compartilhamento do código com outros desenvolvedores, seja para colaboração ou para disponibilização do projeto 
+                para download.</li>
+            </ul>
+        </p>
+        <!-- push & pull -->
+        <h3>Push & Pull</h3>
+        <p>
+            Em Git, "push" e "pull" são <b>comandos usados para sincronizar o repositório local com um repositório remoto.</b><br>
+            <b>Push</b> envia as alterações do seu repositório local para o repositório remoto, enquanto <b>Pull</b> traz as alterações do<br>
+            repositório remoto para o seu repositório local. 
+        </p>
+        <!-- push -->
+        <h4>Push</h4>
+        <p>
+            <ul>
+                <li><b>O que faz:</b><br>
+                Envia as alterações feitas no seu repositório local para o repositório remoto.</li>
+                <li><b>Quando usar:</b><br>
+                Quando você deseja compartilhar suas alterações com outros colaboradores ou atualizar o repositório remoto com suas 
+                modificações.</li>
+                <li><b>Como usar:</b><br>
+                git push origin nome_da_branch.</li>
+            </ul>
+        </p>
+</body>
+</html>
