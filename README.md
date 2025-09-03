@@ -5,4 +5,4 @@ recursos e ferramentas.
 
 ## Autora
 
-- [@Natali](https://github.com/nouveauromance)"adi‡Æo de readme" 
+- [@Natali](https://github.com/nouveauromance)
